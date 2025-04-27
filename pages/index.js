@@ -10,7 +10,9 @@ import Reviews from "../views/Reviews";
 import SideElements from "../components/SideElements";
 import TopScrolledBar from "../components/TopScrolledBar";
 
-import { header, mySelf, outer, reviews, works } from "../utils";
+import { header, mySelf, outer, reviews } from "../utils";
+
+import Works from "../views/Works";
 
 import Cursor from "../components/Cursor";
 
@@ -39,6 +41,10 @@ export default function Home() {
 
         <ViewElement id="my-self">
           <MySelf data={mySelf} />
+        </ViewElement>
+
+        <ViewElement id="experience">
+          <Works data={Works} />
         </ViewElement>
 
         <ViewElement id="reviews">
